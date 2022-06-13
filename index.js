@@ -41,21 +41,24 @@ const record = [
 
     //  superbowlWin(record, finder)
 
-    // function superbowlWin(record){
-    //   let winResult = record.find(function(record){
-    //     return record.result ==="W";
-    //   })
-    //   if(winResult){
-    //     return winResult.year;
+    function superbowlWin(record){
+      let winResult = record.find(function(record){
+        return record.result ==="W";
+      })
+      if(winResult){
+        return winResult.year;
         
-    //   }
+      }
       
-    // }
-
-    function superbowlWin(records){
-      return records.result ==="W"
     }
 
-    let winResult = record.find(superbowlWin)
+  //   function superbowlWin(record){
+  //     if (record.result ==="W"){
+  //       return record.year;
+  //     }
+      
+  //   }
 
-    console.log(winResult)
+  //   let winResult = record.find(superbowlWin)
+  //  console.log(superbowlWin)
+  //   console.log(winResult)
