@@ -41,13 +41,21 @@ const record = [
 
     //  superbowlWin(record, finder)
 
-    function superbowlWin(record){
-      let winResult = record.find(function(record){
-        return record.result ==="W";
-      })
-      if(winResult){
-        return winResult.year;
+    // function superbowlWin(record){
+    //   let winResult = record.find(function(record){
+    //     return record.result ==="W";
+    //   })
+    //   if(winResult){
+    //     return winResult.year;
         
-      }
+    //   }
       
+    // }
+
+    function superbowlWin(records){
+      return records.result ==="W"
     }
+
+    let winResult = record.find(superbowlWin)
+
+    console.log(winResult)
